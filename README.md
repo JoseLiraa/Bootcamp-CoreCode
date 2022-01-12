@@ -1,6 +1,6 @@
 # Bootcamp-CoreCode
 
 ## firts week
-- [x] Week challenges (Tuesday)
-- Java language is compiled or interpreted?
-R/ Java is a interpreted language.
+### Week challenges (Tuesday)
+- [x] Java language is compiled or interpreted?
+- Java is a interpreted language.
