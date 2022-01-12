@@ -2,5 +2,5 @@
 
 ## firts week
 ### Week challenges (Tuesday)
-- [x] Java language is compiled or interpreted?
-- Java is a interpreted language.
+- Java language is compiled or interpreted?
+- [x] Java is a interpreted language.
