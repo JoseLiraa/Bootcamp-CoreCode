@@ -1,103 +1,27 @@
 # Bootcamp-CoreCode
 
 ## firts week
-### Week challenges (Wednesday) 💻
-- **Translate the year you where born to binary, decimal and hexadecimal**
-- [x] results: 1997 (decimal) = 11111001101 (binary) = 7CD (hexadecimal).
-- **Translate 51966 into hexadecimal and binary**
-- [x] results: 51966 (decimal) = 1000101011111110 (binary) = CAFE (hexadecimal).
-- **Use a Low-level language, for example MIPS aseembler, to do so, you will need to follow this (https://github.com/corecodeio/bootcamp-from-scratch/blob/main/src/technologies/2022/week1/resources/MIPS.md) guide. We recomend to check the guide first but also this (https://courses.cs.vt.edu/cs2506/Fall2014/Notes/L04.MIPSAssemblyOverview.pdf) presentation could be helpful.**
-- **Base on the examples and the guide of the low-level language: 5.1 Create a program to add two numbers given by the user 5.2 Create a program that display your name.**
-- [x] results: 
-## program to add, subtract, multiply and divide two numbers
+### Week challenges (Tuesday) 💻
+- **Java language is compiled or interpreted?**
+- [x] A: Java is a interpreted language.
 
-	.data
-		number1: .asciiz "\nIngrese el primer numero: "
-		number2: .asciiz "\nIngrese el segundo numero: "
-		result_message: .asciiz "\nEl resultado de la suma es: "
-		result_message2: .asciiz "\nEl resultado de la resta es: "
-		result_message3: .asciiz "\nEl resultado de la multiplicación es: "
-		result_message4: .asciiz "\nEl resultado de la división es: "
-	.text
-		main:
-		li $v0, 4
-		la $a0, number1		
-		syscall			##Se solicita el primer numero
+- **Create an algorithm to calculate the equivalent of your local currencty to USD**
+- [x] A: 
+1. enter the local currency 
+2. multiply the local currency by its equivalent value ($ 0.11)
+3. we get the result
 
-		li $v0, 5
-		syscall
+- **Why is pseudocode helpful?**
+- [x] A: The pseudocode is very helpful, because it allows us to create a strategy of how to solve a problem, step by step, without worrying about coding, in this way we can be very specific about the steps we want our program to do in order to solve a problem.
 
-		move $t0, $v0		## El primer numero se guarda en $to
+- **Create a pseudocode to calculate the aproximated age of a user base on the year they born, (you can define a variable with the actual year if you need it, like for example i could define Y <-- 2022)**
+- [x] A: 
+1. We ask the user for the year of birth.
+2. We store the year of birth in the variable: "yearBirth".
+3. we define the current year and it is stored in the variable: "currentYear".
+4. we create a variable: "age"
+5. inside the variable "age" we store the result of the subtraction of "currentYear" minus "yearBirth".
+6. We print the "age" variable, which shows us the result of the calculation, which is the age of the user.
 
-		li $v0, 4
-		la $a0, number2
-		syscall			##Se solicita el segundo numero
-
-		li $v0, 5
-		syscall
-		   
-		move $t1, $v0		## El segundo numero se guarda en $t1
-		
-	##-----------------------------------------------------------------------------------------------------------
-	##---------------Se realizan las operaciones(suma, resta, multiplicación y división)-------------------------	
-	
-	
-
-		add $t2, $t0, $t1      ## En t2 se guarda la suma de t0 con t1
-		
-		sub $t3, $t0, $t1      ## En t3 se guarda la resta de t0 con t1
-		
-		mul $t4, $t0, $t1      ## En t4 se guarda la multiplicación de t0 con t1
-		
-		div $t5, $t0, $t1      ## En t5 se guarda la división de t0 con t1
-
-	##-----------------------------------------------------------------------------------------------------------
-	##----------------------------------Se imprimen los resultados---------------------------------------------- 		
-	##-----------------------------------------------------------------------------------------------------------
-	
-	
-		li $v0, 4
-		la $a0 result_message
-		syscall				## Muestra el primer mensaje que se almacena en result_message
-		
-		li $v0, 1
-		move $a0, $t2			## Imprime el valor de la suma, almacenado en t2
-		syscall	
-	##-----------------------------------------------------------------------------------------------------------		
-		li $v0, 4
-		la $a0 result_message2		## Muestra el primer mensaje que se almacena en result_message
-		syscall
-		
-		li $v0, 1
-		move $a0, $t3			## Imprime el valor de la resta, almacenado en t3
-		syscall		
-	##-----------------------------------------------------------------------------------------------------------	
-		li $v0, 4
-		la $a0 result_message3		## Muestra el primer mensaje que se almacena en result_message
-		syscall
-		
-		li $v0, 1
-		move $a0, $t4			## Imprime el valor de la multiplicación, almacenado en t4
-		syscall		
-	##-----------------------------------------------------------------------------------------------------------	
-		li $v0, 4
-		la $a0 result_message4		## Muestra el primer mensaje que se almacena en result_message
-		syscall
-		
-		li $v0, 1
-		move $a0, $t5			## Imprime el valor de la división, almacenado en t5
-		syscall			
-
-## program that display your name.
-	.data
-		msg: .asciiz "\n Hi, my name is: "
-		name: .asciiz "\nJose Lira"
-	.text
-		main:
-			li $v0, 4
-			la $a0, msg		
-			syscall		
-		
-		li $v0, 4
-		la $a0, name		
-		syscall	
+- **Why are flowcharts important to us as developers?**
+- [x] A: A flowchart allow us to convert complex processes in clear, easy-to-understand diagrams, show what is the flow and sequence of processes to carry out an activity.
