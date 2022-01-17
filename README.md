@@ -10,15 +10,16 @@
 - Base on the examples and the guide of the low-level language: 5.1 Create a program to add two numbers given by the user 5.2 Create a program that display your name.
 - [x] results: 
 ## program to add two numbers
-.data
-	number1: .asciiz "\nIngrese el primer numero: "
-	number2: .asciiz "\nIngrese el segundo numero: "
-	result_message: .asciiz "\nEl resultado de la suma es: "
-	result_message2: .asciiz "\nEl resultado de la resta es: "
-	result_message3: .asciiz "\nEl resultado de la multiplicación es: "
-	result_message4: .asciiz "\nEl resultado de la división es: "
-.text
-	main:
+
+	.data
+		number1: .asciiz "\nIngrese el primer numero: "
+		number2: .asciiz "\nIngrese el segundo numero: "
+		result_message: .asciiz "\nEl resultado de la suma es: "
+		result_message2: .asciiz "\nEl resultado de la resta es: "
+		result_message3: .asciiz "\nEl resultado de la multiplicación es: "
+		result_message4: .asciiz "\nEl resultado de la división es: "
+	.text
+		main:
 		li $v0, 4
 		la $a0, number1		
 		syscall			##Se solicita el primer numero
@@ -88,14 +89,14 @@
 		syscall			
 
 ## program that display your name.
-.data
-	msg: .asciiz "\n Hi, my name is: "
-	name: .asciiz "\nJose Lira"
-.text
-	main:
-		li $v0, 4
-		la $a0, msg		
-		syscall		
+	.data
+		msg: .asciiz "\n Hi, my name is: "
+		name: .asciiz "\nJose Lira"
+	.text
+		main:
+			li $v0, 4
+			la $a0, msg		
+			syscall		
 		
 		li $v0, 4
 		la $a0, name		
