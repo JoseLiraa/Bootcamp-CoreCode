@@ -8,9 +8,9 @@
 - **Create an algorithm to calculate the equivalent of your local currencty to USD**
 	- [x] A:
 		```
-        Enter the local currency
-        Multiply the local currency by its equivalent value ($ 0.11)
-        We get the result
+        1. Enter the local currency
+        2. Multiply the local currency by its equivalent value ($ 0.11)
+        3. We get the result
 ```
 
 - **Why is pseudocode helpful?**
