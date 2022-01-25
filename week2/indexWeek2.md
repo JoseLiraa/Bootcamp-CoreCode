@@ -1,6 +1,6 @@
 # Bootcamp-CoreCode 🚀
 
-## Week 1 Challenges  🎯
+## Week 2 Challenges  🎯
 ### Index
 - [Monday](week2-Monday.md)
 - [Tuesday](week2-Tuesday.md)
