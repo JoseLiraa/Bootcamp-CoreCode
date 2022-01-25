@@ -6,8 +6,8 @@
 	- [x] A: Java is a interpreted language.
 
 - **Create an algorithm to calculate the equivalent of your local currencty to USD**
-	- [x] A: 
-			Enter the local currency 
+	- [x] A:
+			Enter the local currency.
 			Multiply the local currency by its equivalent value ($ 0.11)
 			We get the result
 
@@ -15,7 +15,7 @@
 	- [x] A: The pseudocode is very helpful, because it allows us to create a strategy of how to solve a problem, step by step, without worrying about coding, in this way we can be very specific about the steps we want our program to do in order to solve a problem.
 
 - **Create a pseudocode to calculate the aproximated age of a user base on the year they born, (you can define a variable with the actual year if you need it, like for example i could define Y <-- 2022)**
-	- [x] A: 
+	- [x] A:
 			We ask the user for the year of birth.
 			We store the year of birth in the variable: "yearBirth".
 			We define the current year and it is stored in the variable: "currentYear".
