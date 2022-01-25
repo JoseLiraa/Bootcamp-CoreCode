@@ -7,7 +7,7 @@
 
 - **Create an algorithm to calculate the equivalent of your local currencty to USD**
 	- [x] A:
-		```javascript
+		```
         Enter the local currency
         Multiply the local currency by its equivalent value ($ 0.11)
         We get the result
