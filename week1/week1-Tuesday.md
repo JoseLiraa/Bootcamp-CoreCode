@@ -7,9 +7,11 @@
 
 - **Create an algorithm to calculate the equivalent of your local currencty to USD**
 	- [x] A:
-			Enter the local currency.
-			Multiply the local currency by its equivalent value ($ 0.11)
-			We get the result
+		```javascript
+Enter the local currency 
+Multiply the local currency by its equivalent value ($ 0.11)
+We get the result
+```
 
 - **Why is pseudocode helpful?**
 	- [x] A: The pseudocode is very helpful, because it allows us to create a strategy of how to solve a problem, step by step, without worrying about coding, in this way we can be very specific about the steps we want our program to do in order to solve a problem.
