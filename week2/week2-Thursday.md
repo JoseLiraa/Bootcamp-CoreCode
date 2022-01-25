@@ -3,49 +3,48 @@
 ## Second week
 ### Week challenges (Thursday)💻
 
-- Watch [this video](https://www.youtube.com/watch?v=cEBkvm0-rg0)
-
-1. Multiply [Exercise 1](https://www.codewars.com/kata/50654ddff44f800200000004)
+1. Exclamation marks series #2: Remove all exclamation marks from the end of sentence [Exercise 1](https://www.codewars.com/kata/57faece99610ced690000165)
 ```javascript
-function multiply(a, b){
-  return a * b;
+function remove (string) {
+  while(string.endsWith('!'))
+    {
+      string = string.slice(0,-1);
+    }
+  return string;
 }
 ```
 
-2. ASCII Total [Exercise 2](https://www.codewars.com/kata/572b6b2772a38bc1e700007a)
+2. Vowel remover [Exercise 2](https://www.codewars.com/kata/5547929140907378f9000039)
 ```javascript
-function uniTotal (string) {
-  let sumCharacters = 0;
-  for (let i = 0; i < string.length; i ++){
-  sumCharacters = sumCharacters + string.charCodeAt(i);
-  }
-  return sumCharacters;
+function shortcut (string) {
+  return string.replace(/[aeiou]/g, '');
 }
 ```
 
-3. get character from ASCII Value [Exercise 3](https://www.codewars.com/kata/55ad04714f0b468e8200001c)
+3. Rock Paper Scissors! [Exercise 3](https://www.codewars.com/kata/5672a98bdbdd995fad00000f)
 ```javascript
-function getChar(c){
-  return String.fromCharCode(c);
-}
+const rps = (p1, p2) => {
+  if(p1 === p2){return 'Draw!'}
+  if(p1 === 'paper'&& p2 ==='rock'){ return 'Player 1 won!'}
+  if(p1 === 'rock' && p2 ==='scissors'){ return 'Player 1 won!'}
+  if(p1 === 'scissors' && p2 ==='paper'){ return 'Player 1 won!'}
+
+  if(p1 === 'rock' && p2 === 'paper'){ return 'Player 2 won!'}
+  if(p1 === 'paper' && p2 === 'scissors'){ return 'Player 2 won!'}
+  if(p1 === 'scissors' && p2 === 'rock'){ return 'Player 2 won!'}
+};
 ```
 
-4. Binary Addition [Exercise 4](https://www.codewars.com/kata/551f37452ff852b7bd000139)
+4. Persistent Bugger. [Exercise 4](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec)
 ```javascript
-function addBinary(a,b) {
-  let sum = a+b;
-  return sum.toString(2);
-}
-```
-
-5. Student's Final Grade [Exercise 5](https://www.codewars.com/kata/5ad0d8356165e63c140014d4)
-```javascript
-function finalGrade (exam, projects) {
-  //let result = 0;
-  if(exam > 90 || projects > 10) return 100;
-  if(exam > 75 && projects >=5) return 90;
-  if(exam > 50 && projects >= 2 ) return 75;
-  return 0;
+function persistence(num) {
+    let timesMultiply   = 0;
+    num = num.toString();
+    while (num.length > 1) {
+        timesMultiply++;
+        num = num.split('').map(Number).reduce((previousValue, currentValue) => previousValue * currentValue).toString();
+    }
+    return timesMultiply;
 }
 ```
 
