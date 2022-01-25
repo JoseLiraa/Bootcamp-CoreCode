@@ -1,4 +1,4 @@
-# Bootcamp-CoreCode
+# Bootcamp-CoreCode 🚀
 
 ## firts week
 ### Week challenges (Thursday) 💻
