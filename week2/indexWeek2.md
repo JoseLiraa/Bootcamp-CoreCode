@@ -2,7 +2,12 @@
 
 ## Week 1 Challenges  🎯
 ### Index
-- [Tuesday](week2-Monday.md)
-- [Wednesday](week1-wednesday.md)
+- [Monday](week2-Monday.md)
+- [Tuesday](week2-Tuesday.md)
+- [Wednesday](week2-Wednesday.md)
+- [Thursday](week2-Thursday.md)
 
 - Test Week 2 [Item 25](TestWeek2-Item25.md)
+- Core Challenge [Mission Statement](CoreChallenge-MissionStatement.md)
+
+> You can return to the main index, [here](../README.md)
