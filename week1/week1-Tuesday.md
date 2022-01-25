@@ -25,3 +25,6 @@
 
 - **Why are flowcharts important to us as developers?**
 	- [x] A: A flowchart allow us to convert complex processes in clear, easy-to-understand diagrams, show what is the flow and sequence of processes to carry out an activity.
+
+
+- You can return to the index of week 1, [here](indexWeek1.md)

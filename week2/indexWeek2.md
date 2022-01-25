@@ -2,6 +2,7 @@
 
 ## Week 1 Challenges  🎯
 ### Index
-- [Tuesday](week1-Tuesday.md)
+- [Tuesday](week2-Monday.md)
 - [Wednesday](week1-wednesday.md)
-- [Thursday](week1-Thursday.md)
+
+- Test Week 2 [Item 25](TestWeek2-Item25.md)
