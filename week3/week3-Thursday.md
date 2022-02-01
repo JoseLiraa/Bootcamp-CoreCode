@@ -52,15 +52,9 @@ var encryptThis = function(text) {
 ```javascript
 function list(names){
  let newArrayNames=[];
- 
-  
-  /*let newArrayNames= names.map(function(name){
-    return name.name;
-  });*/
-  
-  
+
   let newStringNames = JSON.stringify(names).replace(/(\[*)(\]*)(\{*)(\}*)(\:*)(\"*)(\,*)/g, '').split('name');
-  
+
   newStringNames.forEach(function(e) {
     if (e !== ''){
       newArrayNames.push(e);
