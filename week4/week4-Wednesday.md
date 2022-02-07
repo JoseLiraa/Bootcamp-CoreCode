@@ -2,8 +2,21 @@
 
 ## Fourth week
 ### Week challenges (Wednesday)💻
-1. [Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009)
-2. [Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+1. Array.diff [Exercise 1](https://www.codewars.com/kata/523f5d21c841566fde000009)
+```javascript
+ function arrayDiff(a, b) {
+   return a.filter(function (x) {
+      var bool = true;
+      b.forEach(function(y) {
+        if (x == y){
+          bool = false;
+          }
+      });
+      return bool;
+   });
+}
+```
+2. Create Phone Number [Exercise 2](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
 3. Watch [this](https://www.youtube.com/watch?v=m_MQYyJpIjg)
 4. Watch [this](https://www.youtube.com/watch?v=08CWw_VD45w)
 5. Read [this](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)

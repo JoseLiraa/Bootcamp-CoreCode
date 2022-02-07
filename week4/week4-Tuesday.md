@@ -4,7 +4,7 @@
 ### Week challenges (Tuesday)💻
 1. [This](https://www.typescriptlang.org/docs/handbook/intro.html) link is nice to have and read
 
-2. [Typescript object type](https://typescript-exercises.github.io/#exercise=1)
+2. Typescript object type [Exercise 2](https://typescript-exercises.github.io/#exercise=1)
 ```typescript
 export interface User {
     name: string; age: number; occupation: string
@@ -32,7 +32,7 @@ users.forEach(logPerson);
 ```
 3. Read [this](https://blog.logrocket.com/types-vs-interfaces-in-typescript/)
 
-4. [Typescript union types](https://typescript-exercises.github.io/#exercise=2)
+4. Typescript union types [Exercise 4](https://typescript-exercises.github.io/#exercise=2)
 ```typescript
 interface User {
     name: string;
@@ -77,7 +77,7 @@ export function logPerson(user: Person) {
 
 persons.forEach(logPerson);
 ```
-5. [Typescript in operator](https://typescript-exercises.github.io/#exercise=3)
+5. Typescript in operator [Exercise 5](https://typescript-exercises.github.io/#exercise=3)
 ```typescript
 interface User {
     name: string;
@@ -129,8 +129,41 @@ export function logPerson(person : Person) {
 persons.forEach(logPerson);
 ```
 
-6. [Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836)
+6. Find the odd int [Exercise 6](https://www.codewars.com/kata/54da5a58ea159efa38000836)
+```javascript
+function findOdd(A) {
+var result, num = 0;
 
-7. [Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001)
+  A = A.sort();
+
+  for (var i = 0; i < A.length; i++) {
+    if (A[i] === A[i+1]) {
+      num++;
+    } else {
+      num++;
+      if (num % 2 != 0) {
+        result = A[i];
+        break;
+      }
+    }
+  }
+  return result;
+}
+```
+
+7. Stop gninnipS My sdroW! [Exercise 7](https://www.codewars.com/kata/5264d2b162488dc400000001)
+```javascript
+ function spinWords(string){
+   let theWord = string.match(/\b\w{5,}\b/g);
+   let reverseString;
+
+   for(var i=0; i < theWord.length; i++){
+       reverseString= theWord[i].toString().split('').reverse().join('');
+       string = string.replace(theWord[i], reverseString);
+     }
+   return string;
+}
+```
+
 
 > You can return to the index of week 4, [here](indexWeek4.md)
