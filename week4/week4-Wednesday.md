@@ -16,7 +16,34 @@
    });
 }
 ```
+
 2. Create Phone Number [Exercise 2](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+> first attempt
+```javascript
+ function createPhoneNumber(numbers){
+  let phoneNumber = [];
+
+  for (let i=0; i < numbers.length; i++){
+    if(i == 0) {phoneNumber.push('(')}
+    if(i == 3) {phoneNumber.push(') ')}
+    if(i == 6) {phoneNumber.push('-')}
+    phoneNumber.push(numbers[i]);
+  }return phoneNumber.join('');
+}
+```
+
+> second attempt
+```javascript
+function createPhoneNumber(numbers){
+  var format = "(xxx) xxx-xxxx";
+
+  for(var i = 0; i < numbers.length; i++){
+    format = format.replace('x', numbers[i]);
+  }
+  return format;
+}
+```
+
 3. Watch [this](https://www.youtube.com/watch?v=m_MQYyJpIjg)
 4. Watch [this](https://www.youtube.com/watch?v=08CWw_VD45w)
 5. Read [this](https://medium.com/from-the-scratch/oop-everything-you-need-to-know-about-object-oriented-programming-aee3c18e281b)

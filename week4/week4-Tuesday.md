@@ -153,10 +153,11 @@ var result, num = 0;
 
 7. Stop gninnipS My sdroW! [Exercise 7](https://www.codewars.com/kata/5264d2b162488dc400000001)
 ```javascript
- function spinWords(string){
+  function spinWords(string){
    let theWord = string.match(/\b\w{5,}\b/g);
    let reverseString;
 
+   if(!theWord){return string}
    for(var i=0; i < theWord.length; i++){
        reverseString= theWord[i].toString().split('').reverse().join('');
        string = string.replace(theWord[i], reverseString);
