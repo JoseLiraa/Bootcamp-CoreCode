@@ -8,7 +8,7 @@
 - [Thursday](week3-Thursday.md)
 
 ## Example links 🔗
-1. [Objects](./examples/00_objects.js)
+1. [Objects](./examples/00_object.js)
 2. [Functions](./examples/01_functions.js)
 3. [Scope](./examples/02_scopes.js)
 4. [Spread](./examples/03_spread.js)
